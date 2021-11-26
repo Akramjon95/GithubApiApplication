@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:startIconTint="#81C784">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_user_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/checkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_login"
+        style="?android:progressBarStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/teal_200"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</LinearLayout>
